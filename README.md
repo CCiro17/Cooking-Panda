@@ -2,6 +2,11 @@
 
 **Cooking Panda** is an interactive Swift-based app designed to teach cooking in a fun, engaging way — especially aimed at younger audiences who often find traditional cooking tutorials boring or hard to follow.
 
+It was made by:
+**Ciro Cafora - Fabio Fontana - Alessandro Maddaloni**
+**Adriana Palmese - Angelica Sannino - Ali Raza**
+
+
 ## 🎮 Learn to Cook Through Play
 
 We believe that learning should be **fun**, and that's why Cooking Panda uses **gamification** at its core. Gamification applies game-design elements — like points, rewards, challenges, and progression — to non-game environments. In our case, it makes learning to cook:
