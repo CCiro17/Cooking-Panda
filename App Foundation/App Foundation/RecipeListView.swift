@@ -9,7 +9,7 @@ import SwiftUI
 struct RecipeListView: View {
     @StateObject private var viewModel = RecordsViewModel()
     @State private var isShowingSheet = false
-    @State private var selectedRecipe: Fields?
+    @State private var selectedRecipe: Record?
     @State private var searchText: String = ""
     @State private var selectedCategory: String?
 
@@ -32,16 +32,14 @@ struct RecipeListView: View {
                         PandaFilterButton(imageName: "PandaSalad", color: .green, category: "Vegan", selectedCategory: $selectedCategory)
                         PandaFilterButton(imageName: "PandaDonut", color: .pink, category: "Dessert", selectedCategory: $selectedCategory)
                     }
-                    .padding(.vertical)
-                    .padding(.horizontal)
+                    .padding()
                 }
 
                 // Elenco delle ricette
                 List {
                     ForEach(filteredRecipes) { record in
                         Button {
-                            selectedRecipe = record.fields
-                            isShowingSheet = true
+                            selectedRecipe = record
                         } label: {
                             VStack(alignment: .leading) {
                                 Text(record.fields.Name)
@@ -54,17 +52,17 @@ struct RecipeListView: View {
                     }
                 }
                 .listStyle(.plain)
-                .searchable(text: $searchText)
                 .navigationTitle("All recipes")
+                .searchable(text: $searchText)
+
+            }
+            .sheet(item: $selectedRecipe) { selected in
+                RecipeDetailView(fieldData: selected.fields)
             }
             .onAppear {
                 viewModel.getData()
             }
-            .sheet(isPresented: $isShowingSheet) {
-                if let selected = selectedRecipe {
-                    RecipeDetailView(fieldData: selected)
-                }
-            }
+          
         }
     }
 }

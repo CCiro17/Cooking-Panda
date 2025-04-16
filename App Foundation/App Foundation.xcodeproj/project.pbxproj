@@ -396,9 +396,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"App Foundation/Preview Content\"";
-				DEVELOPMENT_TEAM = B3TVY73XJQ;
+				DEVELOPMENT_TEAM = 44S23BUFBD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = CookingPanda;
 				INFOPLIST_KEY_NSCameraUsageDescription = "\"We need access to your camera to upload pictures\"";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "\"We need access to your photo library to choose pictures\"";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -411,7 +412,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.adrianapalmese.App-Foundation";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fabiofontana.App-Foundation";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -427,9 +428,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"App Foundation/Preview Content\"";
-				DEVELOPMENT_TEAM = B3TVY73XJQ;
+				DEVELOPMENT_TEAM = 44S23BUFBD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = CookingPanda;
 				INFOPLIST_KEY_NSCameraUsageDescription = "\"We need access to your camera to upload pictures\"";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "\"We need access to your photo library to choose pictures\"";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -442,7 +444,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.adrianapalmese.App-Foundation";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fabiofontana.App-Foundation";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

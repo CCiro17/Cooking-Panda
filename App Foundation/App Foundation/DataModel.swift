@@ -19,7 +19,7 @@ struct Record: Codable, Identifiable {
 }
 
 
-struct Fields: Codable {
+struct Fields: Codable, Equatable {
     var Name: String
     var Category: String
     var Instructions: String
